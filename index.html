@@ -2714,6 +2714,270 @@ html.tab-hidden *::after {
 }
 
 
+/* ==========================================
+   STEP 7.3 - FUTURISTIC PROJECT SHOWCASE
+========================================== */
+
+/* PROJECT SECTION */
+.projects-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* PROJECT TITLE */
+.projects-section h1 {
+    text-align: center;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-family: "Orbitron", sans-serif;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-shadow:
+        0 0 10px #00f7ff,
+        0 0 25px rgba(0, 247, 255, 0.4);
+}
+
+/* PROJECT INTRO */
+.projects-intro {
+    max-width: 700px;
+    margin: 0 auto 55px;
+    text-align: center;
+    color: #b8c4d9;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+/* PROJECT GRID */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    align-items: stretch;
+}
+
+/* PROJECT CARD */
+.project-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: rgba(10, 16, 35, 0.88);
+    border: 1px solid rgba(0, 247, 255, 0.2);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+/* CARD HOVER */
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: #00f7ff;
+    box-shadow:
+        0 0 20px rgba(0, 247, 255, 0.18),
+        0 0 45px rgba(0, 247, 255, 0.08);
+}
+
+/* PROJECT IMAGE */
+.project-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #080d1b;
+    border-bottom: 1px solid rgba(0, 247, 255, 0.15);
+}
+
+.project-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.08);
+}
+
+/* PROJECT CONTENT */
+.project-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 25px;
+}
+
+.project-content h2 {
+    color: #ffffff;
+    font-family: "Orbitron", sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.5;
+    margin: 0 0 15px;
+}
+
+.project-content p {
+    color: #b8c4d9;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    margin: 0 0 22px;
+}
+
+/* TECHNOLOGY BADGES */
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.project-tech span {
+    padding: 7px 12px;
+    border-radius: 30px;
+    font-size: 0.75rem;
+    color: #00f7ff;
+    background: rgba(0, 247, 255, 0.08);
+    border: 1px solid rgba(0, 247, 255, 0.25);
+}
+
+/* PROJECT BUTTON CONTAINER */
+.project-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: auto;
+}
+
+/* PROJECT BUTTONS */
+.project-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 42px;
+    padding: 11px 16px;
+    border-radius: 8px;
+    border: 1px solid #00f7ff;
+    background: rgba(0, 247, 255, 0.08);
+    color: #00f7ff;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        box-shadow 0.3s ease,
+        transform 0.3s ease;
+}
+
+.project-button:hover {
+    background: #00f7ff;
+    color: #050816;
+    box-shadow: 0 0 18px rgba(0, 247, 255, 0.45);
+    transform: translateY(-2px);
+}
+
+/* SECONDARY BUTTON */
+.project-button.secondary {
+    border-color: #a855f7;
+    color: #c084fc;
+    background: rgba(168, 85, 247, 0.08);
+}
+
+.project-button.secondary:hover {
+    background: #a855f7;
+    color: #ffffff;
+    box-shadow: 0 0 18px rgba(168, 85, 247, 0.45);
+}
+
+/* COMING SOON BUTTON */
+.project-button[aria-disabled="true"] {
+    cursor: not-allowed;
+    opacity: 0.65;
+    pointer-events: none;
+}
+
+/* ==========================================
+   TABLET RESPONSIVE
+========================================== */
+@media (max-width: 900px) {
+
+    .projects-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+    }
+
+    .project-content {
+        padding: 20px;
+    }
+
+}
+
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
+@media (max-width: 600px) {
+
+    .projects-section {
+        padding: 70px 18px;
+    }
+
+    .projects-intro {
+        margin-bottom: 35px;
+        font-size: 0.92rem;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .project-card {
+        border-radius: 16px;
+    }
+
+    .project-content {
+        padding: 20px;
+    }
+
+    .project-content h2 {
+        font-size: 1.05rem;
+    }
+
+    .project-buttons {
+        flex-direction: column;
+    }
+
+    .project-button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+}
+
+/* ==========================================
+   ACCESSIBILITY - REDUCED MOTION
+========================================== */
+@media (prefers-reduced-motion: reduce) {
+
+    .project-card,
+    .project-image img,
+    .project-button {
+        transition: none;
+    }
+
+    .project-card:hover,
+    .project-button:hover {
+        transform: none;
+    }
+
+}
+
+
  </style>
 
 
@@ -3028,13 +3292,14 @@ html.tab-hidden *::after {
         <!-- PROJECT 01 -->
         <article class="project-card">
 
-            <div class="project-image">
-                <img
-                    src="project-1.jpg"
-                    alt="My Success Website portfolio preview"
-                    loading="lazy"
-                >
-            </div>
+            
+<div class="project-image">
+    <img
+        src="./project-1.jpg"
+        alt="My Success Website preview"
+        loading="lazy"
+    >
+</div>
 
             <div class="project-content">
 
@@ -3078,13 +3343,14 @@ html.tab-hidden *::after {
         <!-- PROJECT 02 -->
         <article class="project-card">
 
-            <div class="project-image">
-                <img
-                    src="project-2.jpg"
-                    alt="Future web development project preview"
-                    loading="lazy"
-                >
-            </div>
+           
+<div class="project-image">
+    <img
+        src="./project-2.jpg"
+        alt="Future Project preview"
+        loading="lazy"
+    >
+</div>
 
             <div class="project-content">
 
@@ -3114,13 +3380,15 @@ html.tab-hidden *::after {
         <!-- PROJECT 03 -->
         <article class="project-card">
 
-            <div class="project-image">
-                <img
-                    src="project-3.jpg"
-                    alt="Creative website project preview"
-                    loading="lazy"
-                >
-            </div>
+         
+<div class="project-image">
+    <img
+        src="./project-3.jpg"
+        alt="Creative Project preview"
+        loading="lazy"
+    >
+</div>
+
 
             <div class="project-content">
 
@@ -4694,6 +4962,8 @@ console.log(
 
 
 // STEP 6.6 COMPLETE
+
+
 
 </script>
 
