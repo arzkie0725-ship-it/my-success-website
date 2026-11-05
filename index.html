@@ -869,6 +869,136 @@ button:active {
 }
 
 
+/* ==========================================
+   STEP 7.5 - PROJECT CARD VISUAL POLISH
+========================================== */
+
+/* PROJECT IMAGE */
+
+.project-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 14px;
+    margin-bottom: 22px;
+    background: #0b1225;
+}
+
+.project-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.05);
+}
+
+/* PROJECT CONTENT */
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* TECHNOLOGY TAGS */
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 22px;
+}
+
+.project-tech span {
+    padding: 7px 12px;
+    border: 1px solid rgba(0, 217, 255, 0.3);
+    border-radius: 20px;
+    background: rgba(0, 217, 255, 0.08);
+    color: #00D9FF;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* PROJECT BUTTONS */
+
+.project-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.project-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 17px;
+    border: 1px solid #00D9FF;
+    border-radius: 8px;
+    background: #00D9FF;
+    color: #050816;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.project-button:hover {
+    background: transparent;
+    color: #00D9FF;
+    box-shadow: 0 0 15px rgba(0, 217, 255, 0.25);
+}
+
+.project-button.secondary {
+    background: transparent;
+    color: #00D9FF;
+}
+
+.project-button.secondary:hover {
+    background: #00D9FF;
+    color: #050816;
+}
+
+.project-button[aria-disabled="true"] {
+    opacity: 0.65;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* MOBILE BUTTONS */
+
+@media (max-width: 600px) {
+    .project-buttons {
+        flex-direction: column;
+    }
+
+    .project-button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+    .project-image img {
+        transition: none;
+    }
+
+    .project-card:hover .project-image img {
+        transform: none;
+    }
+
+    .project-button {
+        transition: none;
+    }
+}
+
 
 
 /* ==========================================
