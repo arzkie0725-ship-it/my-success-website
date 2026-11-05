@@ -1,0 +1,4672 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Explore my personal web developer portfolio featuring my skills, projects, learning journey, and passion for creating modern responsive websites.">
+
+<meta name="theme-color" content="#050816">
+
+
+<!-- OPEN GRAPH SEO -->
+<meta property="og:type" content="website">
+
+<meta property="og:title" content="My Success Website | Future Web Developer Portfolio">
+
+<meta property="og:description" content="Explore my technical skills, projects, and journey as an aspiring web developer.">
+
+<meta property="og:site_name" content="My Success Website">
+
+<!-- UPDATE AFTER WEBSITE DEPLOYMENT -->
+<meta property="og:url" content="https://YOUR-DOMAIN.com/">
+
+<meta property="og:image" content="https://YOUR-DOMAIN.com/website-preview.jpg">
+
+<meta property="og:image:alt" content="My Success Website Portfolio Preview">
+
+<!-- TWITTER SEO -->
+
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="twitter:title" content="My Success Website | Future Web Developer Portfolio">
+
+<meta name="twitter:description" content="Explore my technical skills, projects, and web development journey.">
+
+<meta name="twitter:image" content="https://YOUR-DOMAIN.com/website-preview.jpg">
+
+    <title>My Success Website</title>
+
+    <!-- WEBSITE FAVICON -->
+
+<link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- STEP 6.9.5 - BACKGROUND IMAGE PRELOAD -->
+
+<link
+    rel="preload"
+    as="image"
+    href="hologram-background.webp"
+    fetchpriority="high"
+>
+
+    <style>
+/* ==========================================
+   1. GLOBAL WEBSITE SETTINGS
+========================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #050816;
+    color: #EAF6FF;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+    position: relative;
+    isolation: isolate;
+    min-height: 100vh;
+}
+
+/* KEEP WEBSITE CONTENT ABOVE BACKGROUND */
+
+body > header,
+body > section,
+body > footer {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* ==========================================
+   PREMIUM HOLOGRAM AI BACKGROUND
+========================================== */
+
+
+/* ==========================================
+   2. ANIMATED AI HOLOGRAM BACKGROUND
+========================================== */
+
+.ai-background {
+    position: fixed;
+    inset: 0;
+    z-index: -3;
+    overflow: hidden;
+    pointer-events: none;
+    background: #030713;
+}
+
+.ai-background img {
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    object-fit: cover;
+    object-position: center;
+
+    opacity: 0.75;
+
+    animation: hologramZoom 15s ease-in-out infinite alternate;
+    will-change: transform;
+}
+
+
+@keyframes hologramZoom {
+    from {
+        transform: scale(1.02);
+    }
+
+    to {
+        transform: scale(1.10);
+    }
+}
+
+
+/* MOVING AI LIGHT */
+
+.ai-glow {
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    pointer-events: none;
+
+    background:
+        radial-gradient(
+            circle at 20% 30%,
+            rgba(0, 217, 255, 0.20),
+            transparent 40%
+        ),
+        radial-gradient(
+            circle at 80% 70%,
+            rgba(121, 91, 255, 0.25),
+            transparent 40%
+        );
+
+    animation: hologramGlow 5s ease-in-out infinite alternate;
+}
+
+@keyframes hologramGlow {
+    from {
+        opacity: 0.3;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* DIGITAL RAIN GRID */
+
+.ai-grid {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+
+    opacity: 0.15;
+
+    background-image:
+        repeating-linear-gradient(
+            180deg,
+            transparent 0px,
+            transparent 35px,
+            rgba(0, 217, 255, 0.6) 36px,
+            transparent 38px,
+            transparent 80px
+        );
+
+    background-size: 100% 120px;
+
+    animation: digitalRain 3s linear infinite;
+}
+
+@media (max-width: 600px) {
+
+    .ai-background img {
+        width: 150%;
+        height: 120%;
+        left: -25%;
+    }
+
+}
+
+@keyframes digitalRain {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 0 120px;
+    }
+}
+
+/* MOBILE BACKGROUND */
+
+
+
+
+/* ==========================================
+   5. PROFESSIONAL TYPOGRAPHY
+========================================== */
+
+
+/* ==========================================
+   PREMIUM HOLOGRAM TYPOGRAPHY
+========================================== */
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(30px, 5vw, 54px);
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 1.25;
+
+    color: #00D9FF;
+
+    text-shadow:
+        0 0 10px rgba(0, 217, 255, 0.45),
+        0 0 30px rgba(0, 217, 255, 0.18);
+
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    color: #A5EFFF;
+    letter-spacing: 0.5px;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    color: #C4D2E5;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+.highlight {
+    color: #00D9FF;
+    font-weight: 700;
+
+    text-shadow:
+        0 0 10px rgba(0, 217, 255, 0.35);
+}
+
+/* ==========================================
+   6. PROFESSIONAL HEADER
+========================================== */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+
+    padding: 22px 6%;
+
+    background: rgba(5, 8, 22, 0.65);
+
+    border-bottom:
+        1px solid rgba(0, 217, 255, 0.25);
+
+    position: relative;
+    z-index: 2;
+}
+
+header h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+}
+
+/* ==========================================
+   PROFESSIONAL NEON NAVIGATION MENU
+========================================== */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    position: relative;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+
+    color: #D2DEEF;
+    text-decoration: none;
+
+    padding: 8px 2px;
+
+    transition: 0.3s ease;
+}
+
+/* NEON UNDERLINE */
+
+.navbar a::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 0;
+    height: 2px;
+
+    background: #00D9FF;
+
+    box-shadow: 0 0 10px #00D9FF;
+
+    transition: width 0.3s ease;
+}
+
+/* HOVER EFFECT */
+
+.navbar a:hover {
+    color: #00D9FF;
+
+    text-shadow:
+        0 0 8px rgba(0, 217, 255, 0.8),
+        0 0 15px rgba(0, 217, 255, 0.4);
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+
+/* ==========================================
+   STEP 5.3 - ACTIVE NAVIGATION MENU
+========================================== */
+
+.navbar a.active {
+    color: #00D9FF;
+
+    text-shadow:
+        0 0 8px rgba(0, 217, 255, 0.8),
+        0 0 15px rgba(0, 217, 255, 0.4);
+}
+
+.navbar a.active::after {
+    width: 100%;
+}
+
+
+/* LOGIN LINKS RIGHT SIDE */
+
+.header-login {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.header-login a {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+
+    color: #D2DEEF;
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.header-login a:hover {
+    color: #00D9FF;
+    text-shadow: 0 0 12px #00D9FF;
+}
+
+
+/* MOBILE HEADER AND NAVIGATION */
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 18px;
+        padding: 20px 15px;
+    }
+
+    header h2 {
+        font-size: 18px;
+    }
+
+    .navbar {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .navbar a {
+        font-size: 12px;
+    }
+
+    .header-login {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+}
+
+
+
+/* ABOUT ME SECTION */
+
+.about-section {
+    padding: 100px 20px;
+    background: rgba(5, 8, 22, 0.7);
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    max-width: 1100px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+/* PROFILE IMAGE */
+
+.about-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    padding: 8px;
+
+    background: linear-gradient(
+        135deg,
+        #00eaff,
+        #795bff,
+        #ff00aa
+    );
+
+    animation: profilePulse 3s ease-in-out infinite alternate;
+
+    box-shadow:
+        0 0 25px #00eaff,
+        0 0 60px rgba(0, 234, 255, 0.3);
+}
+@keyframes profilePulse {
+    from {
+        box-shadow:
+            0 0 20px #00eaff,
+            0 0 40px rgba(0, 234, 255, 0.25);
+    }
+
+    to {
+        box-shadow:
+            0 0 35px #00eaff,
+            0 0 70px rgba(121, 91, 255, 0.45);
+    }
+}
+.profile-glow {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #050816;
+}
+
+.profile-glow img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center 30%;
+
+    display: block;
+    border-radius: 50%;
+}
+
+/* ABOUT TEXT */
+
+.about-info {
+    max-width: 500px;
+    text-align: left;
+}
+
+.about-info h2 {
+    font-size: 45px;
+    color: #00eaff;
+    margin-bottom: 10px;
+}
+
+.about-info h3 {
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.about-info p {
+    color: #b8c7d9;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+/* BUTTON */
+
+.about-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+
+    color: #050816;
+    background: #00eaff;
+
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+
+    box-shadow: 0 0 20px rgba(0, 234, 255, 0.5);
+    transition: 0.3s;
+}
+
+.about-button:hover {
+    background: #ffffff;
+    box-shadow: 0 0 30px #00eaff;
+    transform: translateY(-3px);
+}
+
+/* RESPONSIVE ABOUT SECTION */
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-info {
+        text-align: center;
+    }
+
+    .about-image {
+        width: 220px;
+        height: 220px;
+    }
+
+    .about-info h2 {
+        font-size: 32px;
+    }
+}
+
+/* ==========================================
+   8. HERO SECTION
+========================================== */
+
+
+.hero {
+    max-width: 1000px;
+    margin: auto;
+
+    padding: 140px 25px 120px;
+
+    position: relative;
+    z-index: 1;
+}
+
+.hero .subtitle {
+    color: #8BE9FF;
+    font-size: 20px;
+    margin-bottom: 20px;
+
+    text-shadow:
+        0 0 12px rgba(0, 217, 255, 0.5);
+}
+
+.hero p {
+    max-width: 750px;
+    margin: 15px auto;
+
+    text-shadow:
+        0 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding: 100px 20px 80px;
+    }
+}
+
+
+/* ==========================================
+   9. PROFESSIONAL BUTTONS
+========================================== */
+
+button {
+    position: relative;
+    overflow: hidden;
+
+    background: linear-gradient(
+        110deg,
+        #00d9ff,
+        #795bff,
+        #00d9ff
+    );
+
+    background-size: 200% auto;
+
+    color: #ffffff;
+
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    padding: 16px 32px;
+
+    border: 1px solid rgba(0, 247, 255, 0.7);
+    border-radius: 12px;
+
+    font-size: 14px;
+    cursor: pointer;
+
+    box-shadow:
+        0 0 12px rgba(0, 217, 255, 0.5),
+        0 0 25px rgba(121, 91, 255, 0.25);
+
+    transition: all 0.35s ease;
+
+    animation: neonButton 4s linear infinite;
+}
+
+button:hover {
+    transform: translateY(-5px) scale(1.03);
+
+    background-position: right center;
+
+    box-shadow:
+        0 0 15px #00d9ff,
+        0 0 30px #795bff,
+        0 0 50px rgba(0, 217, 255, 0.5);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+@keyframes neonButton {
+    0% {
+        background-position: 0% center;
+    }
+
+    100% {
+        background-position: 200% center;
+    }
+}
+
+
+/* ==========================================
+   10. SKILLS SECTION
+========================================== */
+
+.skills {
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px 25px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.skills > h1 {
+    grid-column: 1 / -1;
+}
+
+
+/* ==========================================
+   11. GLASSMORPHISM CARDS
+========================================== */
+
+
+
+.card {
+    background: rgba(5, 12, 30, 0.68);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(0, 217, 255, 0.22);
+    border-radius: 20px;
+
+    padding: 30px;
+
+    box-shadow:
+        0 15px 45px rgba(0, 0, 0, 0.35),
+        inset 0 0 20px rgba(0, 217, 255, 0.025);
+
+    transition: all 0.35s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+
+    border-color: rgba(0, 217, 255, 0.65);
+
+    box-shadow:
+        0 0 25px rgba(0, 217, 255, 0.15),
+        0 15px 45px rgba(0, 0, 0, 0.45);
+}
+
+.card h2 {
+    color: #00D9FF;
+    margin-bottom: 18px;
+}
+
+
+.card p {
+    font-size: 15px;
+}
+
+
+
+/* ==========================================
+   STEP 3.3 - PROFESSIONAL PROJECTS SECTION
+========================================== */
+
+.projects-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 25px;
+    box-sizing: border-box;
+}
+
+.projects-section h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.projects-intro {
+    max-width: 650px;
+    margin: 0 auto 45px;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    align-items: stretch;
+}
+
+.project-card {
+    min-width: 0;
+    padding: 35px 25px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    background: rgba(5, 12, 30, 0.75);
+
+    border: 1px solid rgba(0, 217, 255, 0.3);
+    border-radius: 20px;
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.08);
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    border-color: #00D9FF;
+
+    box-shadow:
+        0 0 20px rgba(0, 217, 255, 0.3),
+        0 0 40px rgba(121, 91, 255, 0.2);
+}
+
+.project-card h2 {
+    color: #00D9FF;
+    font-size: 19px;
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+
+.project-card p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+    .projects-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .projects-section {
+        padding: 60px 18px;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .project-card {
+        padding: 28px 22px;
+    }
+
+    .project-card h2 {
+        font-size: 17px;
+    }
+
+    .project-card p {
+        font-size: 13px;
+    }
+}
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+    .project-card {
+        transition: none;
+    }
+
+    .project-card:hover {
+        transform: none;
+    }
+}
+
+
+
+
+/* ==========================================
+   12. MY GOAL SECTION
+========================================== */
+
+.goal-section {
+    max-width: 900px;
+    margin: 30px auto 80px;
+    padding: 35px;
+}
+
+.goal-section p {
+    margin-bottom: 15px;
+}
+
+
+
+/* ==========================================
+   FUTURISTIC CONTACT ME SECTION
+========================================== */
+
+.contact-section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 80px 25px;
+}
+
+.contact-intro {
+    max-width: 650px;
+    margin: 0 auto 40px;
+}
+
+.contact-container {
+    max-width: 650px;
+    margin: auto;
+    padding: 35px;
+
+    background: rgba(5, 12, 30, 0.78);
+
+    border: 1px solid rgba(0, 217, 255, 0.35);
+    border-radius: 20px;
+
+    backdrop-filter: blur(15px);
+
+    box-shadow:
+        0 0 25px rgba(0, 217, 255, 0.12),
+        0 0 45px rgba(121, 91, 255, 0.08);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* STEP 6.9.10 - ACCESSIBLE CONTACT FORM LABELS */
+
+.contact-form label {
+    display: block;
+    text-align: left;
+    color: #A5EFFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: -12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 16px;
+
+    background: rgba(11, 25, 48, 0.95);
+    color: white;
+
+    border: 1px solid rgba(0, 217, 255, 0.3);
+    border-radius: 10px;
+
+    outline: none;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+
+    transition: 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #00d9ff;
+
+    box-shadow:
+        0 0 10px rgba(0, 217, 255, 0.3),
+        0 0 20px rgba(121, 91, 255, 0.15);
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #8FA4C1;
+}
+
+.contact-form button {
+    width: 100%;
+    margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+
+    .contact-section {
+        padding: 50px 18px;
+    }
+
+    .contact-container {
+        padding: 22px;
+    }
+
+}
+
+/* ==========================================
+   STEP 6.7 - PROFESSIONAL CONTACT FORM STATUS
+========================================== */
+
+
+/* ==========================================
+   STEP 6.9.6 - CONTACT FORM STATUS FIX
+========================================== */
+
+.form-status {
+    display: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* SENDING STATUS */
+
+.form-status.sending {
+    display: block;
+    color: #00D9FF;
+    background: rgba(0, 217, 255, 0.08);
+    border: 1px solid rgba(0, 217, 255, 0.4);
+}
+
+/* SUCCESS STATUS */
+
+.form-status.success {
+    display: block;
+    color: #00FF88;
+    background: rgba(0, 255, 136, 0.08);
+    border: 1px solid rgba(0, 255, 136, 0.4);
+}
+
+/* ERROR STATUS */
+
+.form-status.error {
+    display: block;
+    color: #FF6B81;
+    background: rgba(255, 77, 109, 0.08);
+    border: 1px solid rgba(255, 77, 109, 0.4);
+}
+
+/* STEP 6.9.6 COMPLETE */
+
+
+/* ==========================================
+   13. FOOTER
+========================================== */
+
+footer {
+    background: rgba(5, 12, 30, 0.90);
+
+    border-top:
+        1px solid rgba(0, 217, 255, 0.25);
+
+    padding: 30px 20px;
+}
+
+footer p {
+    font-size: 14px;
+    color: #AAB8CC;
+}
+
+
+
+/* ==========================================
+   14. LOGIN POPUP - FIXED
+========================================== */
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(8px);
+
+    overflow-y: auto;
+}
+
+.modal-content {
+    position: relative;
+
+    width: 100%;
+    max-width: 420px;
+
+    max-height: 90vh;
+    overflow-y: auto;
+
+    padding: 35px 30px;
+
+    background: #0B1428;
+    border: 1px solid rgba(0, 217, 255, 0.4);
+    border-radius: 20px;
+
+    box-shadow:
+        0 0 30px rgba(0, 217, 255, 0.2),
+        0 0 60px rgba(121, 91, 255, 0.15);
+
+    text-align: center;
+}
+
+.modal-content h2 {
+    color: #00D9FF;
+    margin-bottom: 20px;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 13px;
+    margin: 10px 0;
+
+    background: #0B1930;
+    color: white;
+
+    border: 1px solid rgba(0, 217, 255, 0.3);
+    border-radius: 8px;
+
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
+.modal-content input::placeholder {
+    color: #8FA4C1;
+}
+
+.modal-content input:focus {
+    border-color: #00D9FF;
+    box-shadow: 0 0 10px rgba(0, 217, 255, 0.3);
+}
+
+.modal-content button {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.modal-content p {
+    margin: 15px 0;
+}
+
+.modal-content a {
+    color: #00D9FF;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.modal-content a:hover {
+    text-shadow: 0 0 10px #00D9FF;
+}
+
+.forgot {
+    display: block;
+    text-align: right;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.close {
+    position: absolute;
+    right: 18px;
+    top: 12px;
+
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.close:hover {
+    color: #00D9FF;
+    text-shadow: 0 0 10px #00D9FF;
+}
+
+/* HIDE LOGIN / REGISTER / FORGOT FORMS */
+
+.modal-form-hidden {
+    display: none !important;
+}
+
+
+/* ==========================================
+   15. RESPONSIVE TABLET DESIGN
+========================================== */
+
+@media (max-width: 900px) {
+
+    .skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ==========================================
+   16. RESPONSIVE MOBILE DESIGN
+========================================== */
+
+@media (max-width: 600px) {
+
+
+
+    .hero {
+        padding: 80px 20px;
+    }
+
+    .hero .subtitle {
+        font-size: 16px;
+    }
+
+    .skills {
+    grid-template-columns: 1fr;
+    padding: 40px 18px;
+    gap: 20px;
+}
+
+    .card {
+        padding: 22px;
+    }
+
+    .goal-section {
+        margin: 20px 18px 50px;
+        padding: 22px;
+    }
+
+}
+
+/* FUTURISTIC ANIMATED HERO TITLE */
+
+.hero h1 {
+    background: linear-gradient(
+        90deg,
+        #00f7ff,
+        #8b5cf6,
+        #00f7ff
+    );
+
+    background-size: 200% auto;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: futuristicTitle 4s linear infinite,
+               heroGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes futuristicTitle {
+    to {
+        background-position: 200% center;
+    }
+}
+
+@keyframes heroGlow {
+    from {
+        filter: drop-shadow(0 0 5px rgba(0, 247, 255, 0.3));
+    }
+
+    to {
+        filter: drop-shadow(0 0 18px rgba(139, 92, 246, 0.8));
+    }
+}
+
+
+/* ==========================================
+   STEP 5.4 - PROFESSIONAL SCROLL REVEAL
+========================================== */
+
+/* INITIAL HIDDEN STATE */
+
+
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+
+/* VISIBLE STATE */
+
+.reveal.active-reveal {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ACCESSIBILITY: REDUCE MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+}
+
+
+/* ==========================================
+   STEP 5.4 FIX - CARD HOVER ANIMATION
+========================================== */
+
+
+/* ==========================================
+   STEP 5.5 - ANIMATED SKILL PROGRESS BARS
+========================================== */
+
+.skill-card {
+    text-align: left;
+}
+
+/* SKILL NAME AND PERCENTAGE */
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 25px;
+    margin-bottom: 12px;
+
+    color: #00D9FF;
+
+    font-family: 'Orbitron', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.skill-percent {
+    color: #00F7FF;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px rgba(0, 217, 255, 0.7);
+}
+
+/* PROGRESS BAR BACKGROUND */
+
+.skill-bar {
+    width: 100%;
+    height: 12px;
+
+    background: rgba(0, 217, 255, 0.10);
+
+    border: 1px solid rgba(0, 217, 255, 0.25);
+    border-radius: 50px;
+
+    overflow: hidden;
+
+    box-shadow:
+        inset 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+/* ANIMATED PROGRESS */
+
+.skill-progress {
+    width: 0;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        #00D9FF,
+        #795BFF,
+        #00F7FF
+    );
+
+    border-radius: 50px;
+
+    box-shadow:
+        0 0 10px #00D9FF,
+        0 0 20px rgba(121, 91, 255, 0.6);
+
+    transition: width 1.8s ease-in-out;
+}
+
+/* ACTIVE ANIMATION */
+
+.skill-progress.animate {
+    width: var(--progress-width);
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .skill-info {
+        font-size: 12px;
+    }
+
+    .skill-bar {
+        height: 10px;
+    }
+
+}
+
+
+.reveal.active-reveal.card:hover {
+    transform: translateY(-8px);
+}
+
+.reveal.active-reveal.project-card:hover {
+    transform: translateY(-10px);
+}
+
+
+/* ==========================================
+   STEP 6.1 - FLOATING NEON BACK TO TOP
+========================================== */
+
+#backToTop {
+    position: fixed;
+
+    bottom: 30px;
+    right: 30px;
+
+    width: 55px;
+    height: 55px;
+
+    padding: 0;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+    font-weight: bold;
+
+    color: #00D9FF;
+
+    background: rgba(5, 8, 22, 0.90);
+
+    border: 1px solid #00D9FF;
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 15px rgba(0, 217, 255, 0.5),
+        0 0 30px rgba(0, 217, 255, 0.2);
+
+    z-index: 999;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+
+#backToTop:hover {
+    color: #050816;
+    background: #00D9FF;
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 0 20px #00D9FF,
+        0 0 40px #00D9FF;
+}
+
+/* MOBILE POSITION */
+
+@media (max-width: 600px) {
+
+    #backToTop {
+        bottom: 20px;
+        right: 20px;
+
+        width: 48px;
+        height: 48px;
+
+        font-size: 25px;
+    }
+
+}
+
+
+/* =========================================
+   STEP 6.2 - PROFESSIONAL AI LOADING SCREEN
+========================================= */
+
+#aiLoader {
+    position: fixed;
+    inset: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    background: #050816;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 10000;
+
+    opacity: 1;
+    visibility: visible;
+
+    transition:
+        opacity 0.8s ease,
+        visibility 0.8s ease;
+}
+
+/* LOADER FADE OUT */
+
+#aiLoader.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* LOADER CONTENT */
+
+.loader-content {
+    width: 90%;
+    max-width: 450px;
+
+    text-align: center;
+}
+
+/* LOGO */
+
+.loader-logo {
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 24px;
+    font-weight: 800;
+
+    letter-spacing: 4px;
+
+    color: #00D9FF;
+
+    text-shadow:
+        0 0 10px #00D9FF,
+        0 0 25px rgba(0, 217, 255, 0.5);
+
+    margin-bottom: 40px;
+}
+
+/* SPINNER */
+
+.loader-spinner {
+    width: 75px;
+    height: 75px;
+
+    margin: 0 auto 30px;
+
+    border: 4px solid rgba(0, 217, 255, 0.15);
+    border-top: 4px solid #00D9FF;
+
+    border-right: 4px solid #00D9FF;
+
+    border-radius: 50%;
+
+    animation: aiSpin 1s linear infinite;
+
+    box-shadow:
+        0 0 15px rgba(0, 217, 255, 0.2);
+}
+
+@keyframes aiSpin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* LOADING TEXT */
+
+.loader-text {
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 12px;
+    letter-spacing: 3px;
+
+    color: #00D9FF;
+
+    margin-bottom: 20px;
+
+    animation: loaderPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes loaderPulse {
+    0%, 100% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+/* PROGRESS BAR */
+
+.loader-bar {
+    width: 100%;
+    height: 8px;
+
+    background: rgba(0, 217, 255, 0.1);
+
+    border: 1px solid rgba(0, 217, 255, 0.4);
+
+    border-radius: 50px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 0 10px rgba(0, 217, 255, 0.1);
+}
+
+#loaderProgress {
+    width: 0%;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        #0066FF,
+        #00D9FF,
+        #00FFFF
+    );
+
+    border-radius: 50px;
+
+    box-shadow:
+        0 0 15px #00D9FF;
+
+    transition: width 0.2s ease;
+}
+
+/* PERCENTAGE */
+
+#loaderPercent {
+    display: block;
+
+    margin-top: 15px;
+
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    color: #00D9FF;
+
+    text-shadow:
+        0 0 10px #00D9FF;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    .loader-logo {
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+
+    .loader-spinner {
+        width: 60px;
+        height: 60px;
+    }
+
+    .loader-text {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+}
+
+
+/* =========================================
+   STEP 6.3 - FUTURISTIC AI CURSOR TRAIL
+========================================= */
+
+#cursorTrail {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9998;
+    overflow: hidden;
+}
+
+/* GLOWING PARTICLES */
+
+.cursor-particle {
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #00D9FF;
+
+    box-shadow:
+        0 0 8px #00D9FF,
+        0 0 15px #00D9FF,
+        0 0 25px rgba(0, 217, 255, 0.7);
+
+    pointer-events: none;
+    animation: cursorParticleFade 0.6s ease-out forwards;
+}
+
+/* PARTICLE ANIMATION */
+
+@keyframes cursorParticleFade {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+/* HIDE ON MOBILE AND TOUCH DEVICES */
+
+@media (max-width: 768px),
+       (hover: none),
+       (pointer: coarse) {
+    #cursorTrail {
+        display: none;
+    }
+}
+
+
+/* =========================================
+   STEP 6.4 - FUTURISTIC AI SYSTEM HUD
+========================================= */
+
+
+/* =========================================
+   STEP 6.4 - PROFESSIONAL AI SYSTEM HUD
+   NEW HERO SECTION PLACEMENT
+========================================= */
+
+#aiHUD {
+    position: relative;
+
+    width: 260px;
+    max-width: 100%;
+
+    margin: 40px auto 0;
+    padding: 20px;
+
+    background: rgba(5, 12, 30, 0.85);
+
+    border: 1px solid rgba(0, 217, 255, 0.5);
+
+    border-radius: 18px;
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    box-shadow:
+        0 0 20px rgba(0, 217, 255, 0.15),
+        inset 0 0 15px rgba(0, 217, 255, 0.04);
+
+    color: #00D9FF;
+
+    font-family: 'Orbitron', sans-serif;
+
+    text-align: center;
+
+    animation: hudEntrance 1s ease-out;
+}
+
+/* HUD ENTRANCE */
+
+@keyframes hudEntrance {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* ONLINE STATUS */
+
+.hud-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    margin-bottom: 15px;
+}
+
+/* ONLINE INDICATOR */
+
+.hud-indicator {
+    width: 9px;
+    height: 9px;
+
+    background: #00FF88;
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 8px #00FF88,
+        0 0 15px #00FF88;
+
+    animation: hudBlink 1.5s infinite;
+}
+
+@keyframes hudBlink {
+
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+
+}
+
+/* DIGITAL CLOCK */
+
+.hud-clock {
+    font-size: 29px;
+    font-weight: 800;
+    letter-spacing: 2px;
+
+    text-shadow:
+        0 0 10px rgba(0, 217, 255, 0.6),
+        0 0 20px rgba(0, 217, 255, 0.3);
+
+    margin-bottom: 8px;
+
+    font-variant-numeric: tabular-nums;
+}
+
+/* DATE */
+
+.hud-date {
+    font-family: 'Inter', sans-serif;
+
+    font-size: 11px;
+
+    color: #A5EFFF;
+
+    margin-bottom: 18px;
+}
+
+/* HUD FOOTER */
+
+.hud-footer {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 12px;
+
+    border-top: 1px solid rgba(0, 217, 255, 0.2);
+
+    font-size: 9px;
+    letter-spacing: 1px;
+
+    color: #7A9BB8;
+}
+
+/* VERSION */
+
+.hud-version {
+    color: #795BFF;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    #aiHUD {
+        width: 100%;
+        max-width: 320px;
+
+        margin: 35px auto 0;
+
+        padding: 17px;
+    }
+
+    .hud-clock {
+        font-size: 25px;
+    }
+
+    .hud-status {
+        font-size: 9px;
+    }
+
+    .hud-date {
+        font-size: 10px;
+    }
+
+}
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+
+    #aiHUD,
+    .hud-indicator {
+        animation: none;
+    }
+
+}
+
+
+
+
+
+
+
+/* =========================================
+   STEP 6.5 - FUTURISTIC AI CHATBOT
+========================================= */
+
+/* FLOATING AI CHAT BUTTON */
+
+#aiChatButton {
+    position: fixed;
+
+    right: 30px;
+    bottom: 100px;
+
+    width: 65px;
+    height: 65px;
+
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(5, 12, 30, 0.95);
+
+    border: 2px solid #00D9FF;
+
+    color: #00D9FF;
+
+    font-size: 28px;
+
+    box-shadow:
+        0 0 15px #00D9FF,
+        0 0 35px rgba(0, 217, 255, 0.4);
+
+    z-index: 1001;
+
+    animation: aiChatPulse 2s infinite alternate;
+}
+
+#aiChatButton:hover {
+    background: #00D9FF;
+    color: #050816;
+
+    transform: translateY(-5px) scale(1.05);
+}
+
+@keyframes aiChatPulse {
+
+    from {
+        box-shadow:
+            0 0 10px #00D9FF,
+            0 0 20px rgba(0, 217, 255, 0.3);
+    }
+
+    to {
+        box-shadow:
+            0 0 20px #00D9FF,
+            0 0 45px rgba(0, 217, 255, 0.6);
+    }
+
+}
+
+
+/* CHAT WINDOW */
+
+#aiChatWindow {
+    position: fixed;
+
+    right: 30px;
+    bottom: 180px;
+
+    width: 380px;
+    max-width: calc(100vw - 30px);
+
+    height: 520px;
+    max-height: calc(100vh - 220px);
+
+    display: flex;
+    flex-direction: column;
+
+    background: rgba(5, 12, 30, 0.96);
+
+    border: 1px solid rgba(0, 217, 255, 0.6);
+
+    border-radius: 20px;
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    box-shadow:
+        0 0 25px rgba(0, 217, 255, 0.2),
+        0 0 60px rgba(121, 91, 255, 0.15);
+
+    overflow: hidden;
+
+    z-index: 1001;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(20px) scale(0.95);
+
+    pointer-events: none;
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease,
+        visibility 0.3s ease;
+}
+
+
+/* OPEN CHAT */
+
+#aiChatWindow.chat-open {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0) scale(1);
+
+    pointer-events: auto;
+}
+
+
+/* CHAT HEADER */
+
+.ai-chat-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 18px;
+
+    background: rgba(0, 217, 255, 0.08);
+
+    border-bottom: 1px solid rgba(0, 217, 255, 0.25);
+}
+
+.ai-chat-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.ai-chat-avatar {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 217, 255, 0.12);
+
+    border: 1px solid #00D9FF;
+
+    border-radius: 50%;
+
+    color: #00D9FF;
+
+    font-size: 20px;
+
+    box-shadow: 0 0 15px rgba(0, 217, 255, 0.25);
+}
+
+.ai-chat-title {
+    text-align: left;
+}
+
+.ai-chat-title h3 {
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 13px;
+
+    color: #00D9FF;
+
+    margin-bottom: 5px;
+}
+
+.ai-chat-title p {
+    font-size: 10px;
+    color: #00FF88;
+}
+
+.ai-chat-close {
+    width: 35px;
+    height: 35px;
+
+    padding: 0;
+
+    border: none;
+
+    background: transparent;
+
+    color: #A5EFFF;
+
+    font-size: 25px;
+
+    box-shadow: none;
+
+    animation: none;
+}
+
+.ai-chat-close:hover {
+    color: #FF4D6D;
+
+    background: transparent;
+
+    transform: rotate(90deg);
+}
+
+
+/* CHAT MESSAGES */
+
+#aiChatMessages {
+    flex: 1;
+
+    overflow-y: auto;
+
+    padding: 18px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+
+    text-align: left;
+
+    scroll-behavior: smooth;
+}
+
+
+/* SCROLLBAR */
+
+#aiChatMessages::-webkit-scrollbar {
+    width: 5px;
+}
+
+#aiChatMessages::-webkit-scrollbar-thumb {
+    background: #00D9FF;
+    border-radius: 10px;
+}
+
+
+/* MESSAGE BUBBLES */
+
+.ai-message {
+    max-width: 85%;
+
+    padding: 12px 15px;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    border-radius: 14px;
+
+    overflow-wrap: anywhere;
+}
+
+.ai-message.bot {
+    align-self: flex-start;
+
+    background: rgba(0, 217, 255, 0.10);
+
+    border: 1px solid rgba(0, 217, 255, 0.25);
+
+    color: #D8F7FF;
+
+    border-bottom-left-radius: 3px;
+}
+
+.ai-message.user {
+    align-self: flex-end;
+
+    background: linear-gradient(
+        135deg,
+        #0066FF,
+        #795BFF
+    );
+
+    color: white;
+
+    border-bottom-right-radius: 3px;
+
+    box-shadow: 0 0 15px rgba(0, 217, 255, 0.12);
+}
+
+
+/* TYPING INDICATOR */
+
+.ai-typing {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    padding: 12px 15px;
+
+    width: fit-content;
+
+    background: rgba(0, 217, 255, 0.10);
+
+    border: 1px solid rgba(0, 217, 255, 0.25);
+
+    border-radius: 14px;
+}
+
+.ai-typing span {
+    width: 6px;
+    height: 6px;
+
+    background: #00D9FF;
+
+    border-radius: 50%;
+
+    animation: aiTyping 1s infinite;
+}
+
+.ai-typing span:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+.ai-typing span:nth-child(3) {
+    animation-delay: 0.30s;
+}
+
+@keyframes aiTyping {
+
+    0%, 60%, 100% {
+        opacity: 0.3;
+        transform: translateY(0);
+    }
+
+    30% {
+        opacity: 1;
+        transform: translateY(-5px);
+    }
+
+}
+
+
+/* QUICK QUESTIONS */
+
+.ai-chat-quick {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    padding: 0 15px 15px;
+}
+
+.ai-chat-quick button {
+    padding: 8px 12px;
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 0;
+
+    color: #A5EFFF;
+
+    background: rgba(0, 217, 255, 0.08);
+
+    border: 1px solid rgba(0, 217, 255, 0.3);
+
+    border-radius: 20px;
+
+    box-shadow: none;
+
+    animation: none;
+}
+
+.ai-chat-quick button:hover {
+    color: #050816;
+
+    background: #00D9FF;
+
+    transform: translateY(-2px);
+}
+
+
+/* CHAT INPUT */
+
+.ai-chat-input-area {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 15px;
+
+    background: rgba(0, 217, 255, 0.04);
+
+    border-top: 1px solid rgba(0, 217, 255, 0.2);
+}
+
+#aiChatInput {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 13px 15px;
+
+    background: rgba(11, 25, 48, 0.95);
+
+    color: white;
+
+    border: 1px solid rgba(0, 217, 255, 0.3);
+
+    border-radius: 25px;
+
+    outline: none;
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 13px;
+}
+
+#aiChatInput:focus {
+    border-color: #00D9FF;
+
+    box-shadow: 0 0 12px rgba(0, 217, 255, 0.2);
+}
+
+#aiChatInput::placeholder {
+    color: #8FA4C1;
+}
+
+#aiChatSend {
+    width: 45px;
+    height: 45px;
+
+    padding: 0;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    font-size: 20px;
+}
+
+
+/* MOBILE CHATBOT */
+
+@media (max-width: 600px) {
+
+    #aiChatButton {
+        right: 20px;
+        bottom: 85px;
+
+        width: 55px;
+        height: 55px;
+
+        font-size: 23px;
+    }
+
+    #aiChatWindow {
+        right: 15px;
+        bottom: 150px;
+
+        width: calc(100vw - 30px);
+
+        height: 480px;
+
+        max-height: calc(100vh - 180px);
+    }
+
+    .ai-chat-header {
+        padding: 14px;
+    }
+
+    #aiChatMessages {
+        padding: 14px;
+    }
+
+    .ai-chat-input-area {
+        padding: 12px;
+    }
+
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+
+    #aiChatButton,
+    .ai-typing span {
+        animation: none;
+    }
+
+    #aiChatWindow {
+        transition: none;
+    }
+
+}
+/* STEP 6.5 FIX - CHATBOT DISABLED BUTTONS */
+
+#aiChatSend:disabled,
+.ai-chat-quick button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+/* CHAT INPUT DISABLED */
+
+#aiChatInput:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    button {
+        animation: none !important;
+    }
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+    }
+}
+
+
+/* =========================================
+   STEP 6.8.1 - PERFORMANCE OPTIMIZATION
+========================================= */
+
+/* OPTIMIZE ANIMATIONS */
+
+@media (max-width: 768px) {
+
+    .ai-background img {
+        animation-duration: 20s;
+    }
+
+    .ai-glow {
+        animation-duration: 15s;
+    }
+
+}
+
+
+/* GPU OPTIMIZATION */
+/* Removed unnecessary permanent will-change */
+
+
+/* PREVENT IMAGE DRAGGING */
+
+img {
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+
+/* =========================================
+   STEP 6.8.2 - MOBILE PERFORMANCE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .cursor-trail,
+    .cursor-dot,
+    .cursor-ring {
+        display: none !important;
+    }
+
+    .ai-chatbot {
+        max-width: calc(100vw - 30px);
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
+
+}
+
+
+/* STEP 6.8.4 - ACCESSIBILITY BACKGROUND OPTIMIZATION */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .ai-background img,
+    .ai-glow,
+    .ai-grid {
+        animation: none !important;
+    }
+
+}
+
+
+/* STEP 6.8.5 - MOBILE BUTTON PERFORMANCE */
+
+@media (hover: none) {
+
+    button {
+        animation: none;
+    }
+
+}
+
+
+
+
+/* =========================================
+   STEP 6.9.1 - BACKGROUND PERFORMANCE BOOST
+========================================= */
+
+/* STEP 6.9.9 - SMOOTH HOLOGRAM ANIMATION */
+
+.ai-background img {
+    animation: hologramZoom 18s ease-in-out infinite alternate !important;
+}
+
+/* TABLET AND MOBILE ANIMATION */
+
+@media (max-width: 768px) {
+
+    .ai-background img {
+        animation: hologramZoom 35s ease-in-out infinite alternate !important;
+    }
+
+    .ai-glow {
+        animation: none;
+        opacity: 0.6;
+    }
+
+    .ai-grid {
+        opacity: 0.08;
+        animation: none;
+    }
+
+}
+
+
+
+/* REDUCE GPU WORK */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .ai-background img {
+        animation: none !important;
+        transform: none !important;
+    }
+
+    .ai-glow,
+    .ai-grid {
+        animation: none !important;
+    }
+
+}
+
+
+/* =========================================
+   STEP 6.9.4 - SMART ANIMATION PERFORMANCE
+========================================= */
+
+/* PAUSE CSS ANIMATIONS WHEN TAB IS HIDDEN */
+
+html.tab-hidden *,
+html.tab-hidden *::before,
+html.tab-hidden *::after {
+    animation-play-state: paused !important;
+}
+
+/* STEP 6.9.4 COMPLETE */
+
+
+
+/* ==========================================
+   STEP 7.2 - PROFESSIONAL PROJECT SHOWCASE
+========================================== */
+
+.project-preview {
+    min-height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+    border: 1px solid rgba(0, 217, 255, 0.35);
+    border-radius: 14px;
+    background:
+        radial-gradient(circle at center,
+            rgba(0, 217, 255, 0.18),
+            transparent 65%),
+        linear-gradient(135deg, #101b35, #080d1d);
+    color: #00D9FF;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 18px 0;
+}
+
+.project-tags span {
+    padding: 7px 11px;
+    border: 1px solid rgba(0, 217, 255, 0.35);
+    border-radius: 20px;
+    color: #00D9FF;
+    font-size: 12px;
+}
+
+.project-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.project-button {
+    display: inline-block;
+    padding: 11px 15px;
+    border: 1px solid #00D9FF;
+    border-radius: 7px;
+    color: #00D9FF;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}
+
+.project-button:hover {
+    background: #00D9FF;
+    color: #050816;
+    box-shadow: 0 0 18px rgba(0, 217, 255, 0.45);
+}
+
+.project-button.secondary {
+    border-color: #795bff;
+    color: #b8aaff;
+}
+
+.project-button.secondary:hover {
+    background: #795bff;
+    color: white;
+    box-shadow: 0 0 18px rgba(121, 91, 255, 0.4);
+}
+
+@media (max-width: 600px) {
+    .project-buttons {
+        flex-direction: column;
+    }
+
+    .project-button {
+        text-align: center;
+    }
+}
+
+
+ </style>
+
+
+
+</head>
+
+<body>
+
+
+<!-- STEP 6.2 - AI LOADING SCREEN -->
+<div id="aiLoader" aria-label="Loading website">
+
+    <div class="loader-content">
+
+        <div class="loader-logo">
+            MY SUCCESS WEBSITE
+        </div>
+
+        <div class="loader-spinner"></div>
+
+        <p class="loader-text">
+            LOADING PORTFOLIO...
+        </p>
+
+        <div class="loader-bar">
+            <div id="loaderProgress"></div>
+        </div>
+
+        <span id="loaderPercent">0%</span>
+
+    </div>
+
+</div>
+
+
+
+<!-- PREMIUM HOLOGRAM BACKGROUND -->
+<div class="ai-background">
+    <img
+        src="hologram-background.webp"
+        alt=""
+        loading="eager"
+        fetchpriority="high"
+        decoding="async"
+    >
+</div>
+
+
+<div class="ai-glow"></div>
+
+<div class="ai-grid"></div>
+
+
+
+<header>
+
+    <!-- WEBSITE LOGO -->
+    <h2>My Success Website</h2>
+
+    <!-- NAVIGATION MENU -->
+    <nav class="navbar">
+
+        <a href="#home">Home</a>
+
+        <a href="#about">About</a>
+
+        <a href="#mySkills">Skills</a>
+
+        <a href="#myProjects">Projects</a>
+
+        <a href="#myGoal">Goal</a>
+
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+    <!-- LOGIN AND SIGN UP -->
+    <div class="header-login">
+
+        <a href="#" onclick="openLogin(); return false;">
+            Login
+        </a>
+
+        <a href="#" onclick="openRegister(); return false;">
+            Sign Up
+        </a>
+
+        <a href="#" onclick="openForgotPassword(); return false;">
+            Forgot Password?
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+
+
+
+    <h1>BUILDING THE FUTURE</h1>
+
+    
+<h2 class="subtitle">
+    Aspiring Web Developer | Creative Website Designer
+</h2>
+
+<p>
+    Hello! I'm an aspiring
+    <span class="highlight">Web Developer</span>
+    passionate about building modern, responsive,
+    and user-friendly websites using HTML, CSS, and JavaScript.
+</p>
+
+<p>
+    I enjoy turning creative ideas into digital experiences.
+    I'm continuously improving my skills and working toward
+    helping businesses establish a professional online presence.
+</p>
+
+
+    <button onclick="document.getElementById('mySkills').scrollIntoView({behavior:'smooth'})">
+        EXPLORE MY SKILLS
+    </button>
+<!-- AI SYSTEM CLOCK -->
+
+<div id="aiHUD">
+
+    <div class="hud-status">
+        <span class="hud-indicator"></span>
+        <span>PORTFOLIO SYSTEM ONLINE</span>
+    </div>
+
+    <div class="hud-clock" id="hudClock">
+        00:00:00
+    </div>
+
+    <div class="hud-date" id="hudDate">
+        LOADING DATE...
+    </div>
+
+    <div class="hud-footer">
+        <span>SYSTEM ACTIVE</span>
+        <span class="hud-version">V1.0</span>
+    </div>
+
+</div>
+
+
+</section>
+
+
+<!-- ABOUT ME SECTION -->
+<section id="about" class="about-section">
+
+    <div class="about-container">
+
+        <!-- PROFILE IMAGE -->
+        <div class="about-image">
+            <div class="profile-glow">
+
+<img
+    src="my-picture.jpg"
+    alt="My Profile"
+    class="my-profile-picture"
+    width="300"
+    height="300"
+    loading="lazy"
+    decoding="async"
+>
+
+            </div>
+        </div>
+
+
+<!-- ABOUT INFORMATION -->
+<div class="about-info">
+
+    <h2>ABOUT ME</h2>
+
+    <h3>Aspiring Web Developer</h3>
+
+    <p>
+        I'm an aspiring web developer focused on learning
+        and building websites using HTML, CSS, and JavaScript.
+        I enjoy creating modern designs, responsive layouts,
+        and interactive website features.
+    </p>
+
+    <p>
+        My journey is built on continuous learning,
+        hands-on practice, and a passion for turning ideas
+        into useful digital experiences. My goal is to grow
+        into a professional web developer and help businesses
+        build their online presence.
+    </p>
+
+    <a href="#mySkills" class="about-button">
+        VIEW MY SKILLS
+    </a>
+
+</div>
+ 
+
+    </div>
+
+</section>
+
+  
+
+<section class="skills" id="mySkills">
+
+    <h1>MY TECHNICAL SKILLS</h1>
+
+    <!-- HTML SKILL -->
+    <div class="card skill-card">
+
+        <h2>01. HTML</h2>
+
+        <p>
+            I understand the fundamentals of HTML and
+            how to structure web pages using headings,
+            paragraphs, links, images, and forms.
+        </p>
+
+        <div class="skill-info">
+            <span>HTML</span>
+            <span class="skill-percent">LEARNING</span>
+        </div>
+
+        <div class="skill-bar">
+        <div class="skill-progress" data-progress="20"></div>
+
+        </div>
+
+    </div>
+
+    <!-- CSS SKILL -->
+<div class="card skill-card">
+
+    <h2>02. CSS</h2>
+
+    <p>
+        I am learning CSS to create modern and
+        visually appealing websites using colors,
+        typography, backgrounds, spacing, layouts,
+        Flexbox, and responsive design.
+    </p>
+
+    <div class="skill-info">
+        <span>CSS</span>
+        <span class="skill-percent">PRACTICING</span>
+    </div>
+
+    <div class="skill-bar">
+        <div class="skill-progress" data-progress="35"></div>
+    </div>
+
+</div>
+
+   
+<!-- JAVASCRIPT SKILL -->
+<div class="card skill-card">
+
+    <h2>03. JavaScript</h2>
+
+    <p>
+        I am learning JavaScript to make websites
+        interactive through variables, functions,
+        events, conditions, and DOM manipulation.
+    </p>
+
+    <div class="skill-info">
+        <span>JavaScript</span>
+        <span class="skill-percent">LEARNING</span>
+    </div>
+
+    <div class="skill-bar">
+        <div
+            class="skill-progress"
+            data-progress="15"
+        ></div>
+    </div>
+
+</div>
+
+
+</section>
+
+
+
+
+<!-- MY PROJECTS SECTION -->
+
+<section class="projects-section" id="myProjects">
+
+    <h1>MY PROJECTS</h1>
+
+    <p class="projects-intro">
+        Explore my web development projects,
+        creative experiments, and learning journey.
+        Each project represents a step toward
+        becoming a professional web developer.
+    </p>
+
+    <div class="projects-container">
+
+        <!-- PROJECT 01 -->
+        <div class="project-card">
+
+            <div class="project-preview">
+                <span>PROJECT 01</span>
+            </div>
+
+            <h2>Personal Developer Portfolio</h2>
+
+            <p>
+                A personal portfolio website showcasing
+                my technical skills, development journey,
+                and creative projects. Designed with a
+                modern futuristic interface and responsive
+                layouts.
+            </p>
+
+            <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+
+          <div class="project-buttons">
+
+    <div class="project-buttons">
+
+    <span
+        class="project-button"
+        aria-disabled="true"
+    >
+        LIVE DEMO - AFTER PUBLISHING
+    </span>
+
+    <span
+        class="project-button secondary"
+        aria-disabled="true"
+    >
+        SOURCE CODE - COMING SOON
+    </span>
+
+</div>
+
+</div>  
+        </div>
+
+
+        <!-- PROJECT 02 -->
+        <div class="project-card">
+
+            <div class="project-preview">
+                <span>PROJECT 02</span>
+            </div>
+
+            <h2>Login & Registration UI</h2>
+
+            <p>
+                A frontend authentication interface
+                featuring modern login, registration,
+                and password recovery screens.
+                This is a demonstration UI and does
+                not provide real authentication.
+            </p>
+
+            <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+
+            <div class="project-buttons">
+
+                <span class="project-button" aria-disabled="true">
+                    LIVE DEMO - COMING SOON
+                </span>
+
+                <span class="project-button secondary" aria-disabled="true">
+                    SOURCE CODE - COMING SOON
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- PROJECT 03 -->
+        <div class="project-card">
+
+            <div class="project-preview">
+                <span>PROJECT 03</span>
+            </div>
+
+            <h2>Business Website Concept</h2>
+
+            <p>
+                A business website concept created
+                to practice professional layouts,
+                responsive design, and user-friendly
+                website presentation.
+            </p>
+
+            <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+
+            <div class="project-buttons">
+
+                <span class="project-button" aria-disabled="true">
+                    LIVE DEMO - COMING SOON
+                </span>
+
+                <span class="project-button secondary" aria-disabled="true">
+                    SOURCE CODE - COMING SOON
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="card goal-section" id="myGoal">
+
+    <h1>MY GOAL</h1>
+
+    <p>
+        My goal is to become a skilled web developer
+        capable of creating professional, responsive,
+        and user-friendly websites.
+    </p>
+
+    <p>
+        I am committed to learning new technologies,
+        improving my coding abilities, and creating
+        digital experiences that bring value to businesses.
+    </p>
+
+    <p class="highlight">
+        "Code with passion. Create with purpose.
+        Build the future."
+    </p>
+
+
+</section>
+
+<!-- CONTACT ME SECTION -->
+
+<section class="contact-section" id="contact">
+
+    <h1>CONTACT ME</h1>
+
+    <p class="contact-intro">
+        Have a project, opportunity, or question?
+        Feel free to send me a message.
+    </p>
+
+    <div class="contact-container">
+
+        <form class="contact-form"
+              onsubmit="return sendMessage(event)">
+
+
+<label for="contactName">Your Name</label>
+<input
+    type="text"
+    id="contactName"
+    name="name"
+    placeholder="Enter your name"
+    autocomplete="name"
+    required
+>
+
+<label for="contactEmail">Your Email</label>
+<input
+    type="email"
+    id="contactEmail"
+    name="email"
+    placeholder="Enter your email"
+    autocomplete="email"
+    required
+>
+
+<label for="contactMessage">Your Message</label>
+<textarea
+    id="contactMessage"
+    name="message"
+    placeholder="Write your message here..."
+    rows="6"
+    required
+></textarea>
+
+
+            <button type="submit">
+                SEND MESSAGE
+            </button>
+
+            <!-- STEP 6.7 - FORM STATUS MESSAGE -->
+            <p
+                id="contactStatus"
+                class="form-status"
+                role="status"
+                aria-live="polite"
+            ></p>
+
+        </form>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>My Success Website | 2026</p>
+
+    <p>Created by Raymund Kevin Russel - Future Web Developer</p>
+
+</footer>
+
+
+<!-- STEP 6.1 - BACK TO TOP BUTTON -->
+
+<button id="backToTop" aria-label="Back to top">
+    ↑
+</button>
+
+<!-- STEP 6.3 - AI CURSOR TRAIL -->
+
+
+
+<div id="cursorTrail"></div>
+
+<!-- STEP 6.4 - FUTURISTIC AI SYSTEM HUD -->
+
+
+
+<!-- =========================================
+     STEP 6.5 - FUTURISTIC AI CHATBOT HTML
+========================================= -->
+
+<!-- FLOATING CHAT BUTTON -->
+
+<button
+    id="aiChatButton"
+    type="button"
+    aria-label="Open AI Assistant"
+    aria-controls="aiChatWindow"
+    aria-expanded="false"
+>
+    🤖
+</button>
+
+
+<!-- CHAT WINDOW -->
+
+<div
+    id="aiChatWindow"
+    role="dialog"
+    aria-label="AI Assistant Chat"
+    aria-hidden="true"
+>
+
+    <!-- CHAT HEADER -->
+
+    <div class="ai-chat-header">
+
+        <div class="ai-chat-brand">
+
+            <div class="ai-chat-avatar">
+                🤖
+            </div>
+
+            <div class="ai-chat-title">
+
+                <h3>PORTFOLIO ASSISTANT</h3>
+
+                <p>● ONLINE • WEBSITE SUPPORT</p>
+
+            </div>
+
+        </div>
+
+        <button
+            class="ai-chat-close"
+            id="aiChatClose"
+            type="button"
+            aria-label="Close chatbot"
+        >
+            &times;
+        </button>
+
+    </div>
+
+
+    <!-- CHAT MESSAGES -->
+
+    <div
+        id="aiChatMessages"
+        aria-live="polite"
+        aria-relevant="additions text"
+    >
+
+        <!-- INITIAL WELCOME MESSAGE -->
+
+        <div class="ai-message bot">
+            Hello! 👋 Welcome to My Success Website.
+            I'm your Portfolio Assistant. Ask me about my skills,
+            projects, or web development journey!
+        </div>
+
+    </div>
+
+
+    <!-- QUICK QUESTIONS -->
+
+    <div class="ai-chat-quick">
+
+        <button type="button" data-question="Tell me about your skills">
+            My Skills
+        </button>
+
+        <button type="button" data-question="Tell me about your projects">
+            Projects
+        </button>
+
+        <button type="button" data-question="What is your goal">
+            My Goal
+        </button>
+
+    </div>
+
+
+    <!-- CHAT INPUT -->
+
+    <form class="ai-chat-input-area" id="aiChatForm">
+
+        <input
+            type="text"
+            id="aiChatInput"
+            placeholder="Ask me anything..."
+            autocomplete="off"
+            aria-label="Type your message"
+            maxlength="500"
+            required
+        >
+
+        <button
+            type="submit"
+            id="aiChatSend"
+            aria-label="Send message"
+        >
+            ➤
+        </button>
+
+    </form>
+
+</div>
+
+
+
+
+
+<!-- ======================================
+     LOGIN POPUP STARTS HERE
+====================================== -->
+
+<div id="loginModal" class="modal">
+
+    <div class="modal-content">
+
+        <!-- CLOSE BUTTON -->
+        <span class="close" onclick="closeLogin()">&times;</span>
+
+
+        <!-- ======================================
+             LOGIN FORM
+        ====================================== -->
+
+        <div id="loginForm">
+
+            <h2>Welcome Back!</h2>
+
+            <form onsubmit="return demoLogin(event)">
+
+                <input
+                    type="text"
+                    placeholder="Username or Email"
+                    required
+                >
+
+                <input
+                    type="password"
+                    placeholder="Password"
+                    required
+                >
+
+                <a class="forgot" onclick="showForgot()">
+                    Forgot Password?
+                </a>
+
+                <button type="submit">LOGIN</button>
+
+            </form>
+
+            <p>Don't have an account?</p>
+
+            <a onclick="showRegister()">
+                Create Account
+            </a>
+
+        </div>
+
+
+        <!-- ======================================
+             FORGOT PASSWORD FORM
+        ====================================== -->
+
+        <div id="forgotForm" class="modal-form-hidden">
+
+            <h2>Forgot Password?</h2>
+
+            <p>Enter your email to recover your password.</p>
+
+            <form onsubmit="return demoRecovery(event)">
+
+                <input
+                    type="email"
+                    placeholder="Enter your Email"
+                    required
+                >
+
+                <button type="submit">
+                    RESET PASSWORD
+                </button>
+
+            </form>
+
+            <p>Remember your password?</p>
+
+            <a onclick="showLoginForm()">
+                Back to Login
+            </a>
+
+        </div>
+
+
+        <!-- ======================================
+             CREATE ACCOUNT FORM
+        ====================================== -->
+
+        <div id="registerForm" class="modal-form-hidden">
+
+            <h2>Create Account</h2>
+
+            <form onsubmit="return demoRegister(event)">
+
+                <input
+                    type="text"
+                    placeholder="Full Name"
+                    required
+                >
+
+                <input
+                    type="text"
+                    placeholder="Username"
+                    required
+                >
+
+                <input
+                    type="email"
+                    placeholder="Email"
+                    required
+                >
+
+                <input
+                    type="password"
+                    placeholder="Password"
+                    required
+                >
+
+                <button type="submit">
+                    CREATE ACCOUNT
+                </button>
+
+            </form>
+
+            <p>Already have an account?</p>
+
+            <a onclick="showLoginForm()">
+                Back to Login
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ======================================
+     LOGIN POPUP ENDS HERE
+====================================== -->
+
+
+<!-- JAVASCRIPT CODE -->
+<script>
+
+// ======================================
+// 1. OPEN LOGIN
+// ======================================
+
+function openLogin() {
+
+    document.getElementById("loginModal").style.display = "flex";
+
+    showLoginForm();
+
+}
+
+
+// ======================================
+// 2. OPEN SIGN UP
+// ======================================
+
+function openRegister() {
+
+    document.getElementById("loginModal").style.display = "flex";
+
+    showRegister();
+
+}
+
+
+// ======================================
+// 3. OPEN FORGOT PASSWORD
+// ======================================
+
+function openForgotPassword() {
+
+    document.getElementById("loginModal").style.display = "flex";
+
+    showForgot();
+
+}
+
+
+// ======================================
+// 4. CLOSE POPUP
+// ======================================
+
+function closeLogin() {
+
+    document.getElementById("loginModal").style.display = "none";
+
+}
+
+
+// ======================================
+// 5. SHOW LOGIN FORM
+// ======================================
+
+function showLoginForm() {
+
+    document.getElementById("loginForm").classList.remove("modal-form-hidden");
+
+    document.getElementById("forgotForm").classList.add("modal-form-hidden");
+
+    document.getElementById("registerForm").classList.add("modal-form-hidden");
+
+}
+
+
+// ======================================
+// 6. SHOW FORGOT PASSWORD
+// ======================================
+
+function showForgot() {
+
+    document.getElementById("loginForm").classList.add("modal-form-hidden");
+
+    document.getElementById("forgotForm").classList.remove("modal-form-hidden");
+
+    document.getElementById("registerForm").classList.add("modal-form-hidden");
+
+}
+
+
+// ======================================
+// 7. SHOW REGISTER FORM
+// ======================================
+
+function showRegister() {
+
+    document.getElementById("loginForm").classList.add("modal-form-hidden");
+
+    document.getElementById("forgotForm").classList.add("modal-form-hidden");
+
+    document.getElementById("registerForm").classList.remove("modal-form-hidden");
+
+}
+
+
+// ======================================
+// 8. DEMO LOGIN
+// ======================================
+
+function demoLogin(event) {
+
+    event.preventDefault();
+
+    alert("Login demo! Authentication is not connected yet.");
+
+    return false;
+
+}
+
+
+// ======================================
+// 9. DEMO FORGOT PASSWORD
+// ======================================
+
+function demoRecovery(event) {
+
+    event.preventDefault();
+
+    alert("Password recovery demo! Email service is not connected yet.");
+
+    return false;
+
+}
+// ======================================
+// DEMO REGISTRATION
+// ======================================
+
+function demoRegister(event) {
+
+    event.preventDefault();
+
+    alert("Registration demo! Account system is not connected yet.");
+
+    return false;
+
+}
+
+
+
+// ==========================================
+// STEP 6.7 - PROFESSIONAL CONTACT FORM
+// ==========================================
+
+
+// ==========================================
+// STEP 6.8 - FORMSPREE CONTACT FORM
+// ==========================================
+
+async function sendMessage(event) {
+
+    event.preventDefault();
+
+    const contactForm = document.querySelector(".contact-form");
+    const contactStatus = document.getElementById("contactStatus");
+    const submitButton = contactForm.querySelector('button[type="submit"]');
+
+    const name = document.getElementById("contactName").value.trim();
+    const email = document.getElementById("contactEmail").value.trim();
+    const message = document.getElementById("contactMessage").value.trim();
+
+    if (!name || !email || !message) {
+
+        contactStatus.textContent = "Please complete all fields.";
+        contactStatus.className = "form-status error";
+
+        return false;
+    }
+
+    submitButton.disabled = true;
+    submitButton.textContent = "SENDING...";
+
+contactStatus.textContent = "Sending your message...";
+contactStatus.className = "form-status sending";
+
+    try {
+
+        const response = await fetch("https://formspree.io/f/xqppgjgl", {
+
+            method: "POST",
+
+            body: new FormData(contactForm),
+
+            headers: {
+                "Accept": "application/json"
+            }
+
+        });
+
+        if (response.ok) {
+
+            contactStatus.textContent =
+                "Thank you, " + name + "! Your message has been sent successfully.";
+
+            contactStatus.className = "form-status success";
+
+            contactForm.reset();
+
+        } else {
+
+            contactStatus.textContent =
+                "Sorry, your message could not be sent. Please try again.";
+
+            contactStatus.className = "form-status error";
+
+        }
+
+    } catch (error) {
+
+        contactStatus.textContent =
+            "Network error. Please check your internet connection and try again.";
+
+        contactStatus.className = "form-status error";
+
+        console.error("Formspree Error:", error);
+
+    } finally {
+
+        submitButton.disabled = false;
+        submitButton.textContent = "SEND MESSAGE";
+
+    }
+
+    return false;
+
+}
+
+
+
+    
+
+
+// ======================================
+// 11. CLICK OUTSIDE TO CLOSE
+// ======================================
+
+document.getElementById("loginModal").addEventListener("click", function(event) {
+
+    if (event.target === this) {
+
+        closeLogin();
+
+    }
+
+});
+
+
+// ======================================
+// 12. PRESS ESCAPE TO CLOSE
+// ======================================
+
+document.addEventListener("keydown", function(event) {
+
+    if (event.key === "Escape") {
+
+        closeLogin();
+
+    }
+
+});
+
+
+
+// ==========================================
+// STEP 5.4 - PROFESSIONAL SCROLL REVEAL
+// ==========================================
+
+// CHECK USER MOTION PREFERENCE
+
+const prefersReducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+).matches;
+
+// RUN ANIMATION ONLY IF ALLOWED
+
+if (!prefersReducedMotion) {
+
+    const revealElements = document.querySelectorAll(
+        ".hero, .about-container, .skills > *, .projects-section > *, .project-card, .goal-section, .contact-section > *"
+    );
+
+    revealElements.forEach(function(element) {
+
+        element.classList.add("reveal");
+
+    });
+
+    const revealObserver = new IntersectionObserver(
+        function(entries) {
+
+            entries.forEach(function(entry) {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add("active-reveal");
+
+                    revealObserver.unobserve(entry.target);
+
+                }
+
+            });
+
+        },
+        {
+            threshold: 0.15
+        }
+    );
+
+    revealElements.forEach(function(element) {
+
+        revealObserver.observe(element);
+
+    });
+
+}
+
+
+
+// ==========================================
+// STEP 5.3 - ACTIVE NAVIGATION ON SCROLL
+// ==========================================
+
+const sections = document.querySelectorAll(
+    "#home, #about, #mySkills, #myProjects, #myGoal, #contact"
+);
+
+const navLinks = document.querySelectorAll(".navbar a");
+
+const observer = new IntersectionObserver(function(entries) {
+
+    entries.forEach(function(entry) {
+
+        if (entry.isIntersecting) {
+
+            navLinks.forEach(function(link) {
+
+                link.classList.remove("active");
+
+            });
+
+            const activeLink = document.querySelector(
+                '.navbar a[href="#' + entry.target.id + '"]'
+            );
+
+            if (activeLink) {
+
+                activeLink.classList.add("active");
+
+            }
+
+        }
+
+    });
+
+}, {
+
+    threshold: 0.25
+
+});
+
+sections.forEach(function(section) {
+
+    observer.observe(section);
+
+});
+
+
+
+/* ==========================================
+   STEP 5.5 - SKILL PROGRESS ANIMATION
+========================================== */
+
+const skillBars = document.querySelectorAll(".skill-progress");
+
+const skillObserver = new IntersectionObserver(
+    function(entries) {
+
+        entries.forEach(function(entry) {
+
+            if (entry.isIntersecting) {
+
+                const bar = entry.target;
+
+                const progress = bar.dataset.progress;
+
+                bar.style.setProperty(
+                    "--progress-width",
+                    progress + "%"
+                );
+
+                bar.classList.add("animate");
+
+                skillObserver.unobserve(bar);
+
+            }
+
+        });
+
+    },
+    {
+        threshold: 0.5
+    }
+);
+
+skillBars.forEach(function(bar) {
+
+    skillObserver.observe(bar);
+
+});
+
+
+
+/* ==========================================
+   STEP 6.1 - BACK TO TOP FUNCTION
+========================================== */
+
+const backToTop = document.getElementById("backToTop");
+
+// UPDATE BUTTON VISIBILITY
+
+function updateBackToTop() {
+
+    if (window.scrollY > 400) {
+
+        backToTop.style.display = "flex";
+
+    } else {
+
+        backToTop.style.display = "none";
+
+    }
+
+}
+
+// CHECK WHEN SCROLLING
+
+window.addEventListener("scroll", updateBackToTop);
+
+// CHECK IMMEDIATELY
+
+updateBackToTop();
+
+// SMOOTH SCROLL TO TOP
+
+backToTop.addEventListener("click", function() {
+
+    window.scrollTo({
+
+        top: 0,
+
+        behavior: "smooth"
+
+    });
+
+});
+
+
+
+/* =========================================
+   STEP 6.2 - IMPROVED AI LOADING SCREEN
+========================================= */
+
+const aiLoader = document.getElementById("aiLoader");
+const loaderProgress = document.getElementById("loaderProgress");
+const loaderPercent = document.getElementById("loaderPercent");
+
+let loadingProgress = 0;
+
+const loaderStartTime = Date.now();
+
+/* SIMULATED PROGRESS */
+
+const loadingTimer = setInterval(function() {
+
+    if (loadingProgress < 90) {
+
+        loadingProgress += 2;
+
+        loaderProgress.style.width = loadingProgress + "%";
+
+        loaderPercent.textContent = loadingProgress + "%";
+
+    }
+
+}, 50);
+
+/* WEBSITE FULLY LOADED */
+
+window.addEventListener("load", function() {
+
+    clearInterval(loadingTimer);
+
+    const elapsed = Date.now() - loaderStartTime;
+
+    const remaining = Math.max(0, 1200 - elapsed);
+
+    /* WAIT FOR MINIMUM LOADING DURATION */
+
+    setTimeout(function() {
+
+        loadingProgress = 100;
+
+        loaderProgress.style.width = "100%";
+
+        loaderPercent.textContent = "100%";
+
+        /* FADE OUT */
+
+        setTimeout(function() {
+
+            aiLoader.classList.add("loader-hidden");
+
+        }, 500);
+
+        /* REMOVE LOADER */
+
+        setTimeout(function() {
+
+            aiLoader.remove();
+
+        }, 1400);
+
+    }, remaining);
+
+});
+/* =========================================
+   STEP 6.3 - AI CURSOR TRAIL FUNCTION
+========================================= */
+
+const cursorTrail = document.getElementById("cursorTrail");
+
+const isTouchDevice = window.matchMedia(
+    "(hover: none), (pointer: coarse)"
+).matches;
+
+/* RUN ONLY ON DESKTOP */
+
+if (!isTouchDevice) {
+
+    let lastParticleTime = 0;
+
+    document.addEventListener("mousemove", function(event) {
+
+        const currentTime = performance.now();
+
+        /* LIMIT PARTICLE CREATION */
+
+        if (currentTime - lastParticleTime < 25) {
+            return;
+        }
+
+        lastParticleTime = currentTime;
+
+        /* CREATE PARTICLE */
+
+        const particle = document.createElement("div");
+
+        particle.className = "cursor-particle";
+
+        /* POSITION PARTICLE */
+
+        particle.style.left = event.clientX + "px";
+        particle.style.top = event.clientY + "px";
+
+        /* CENTER PARTICLE */
+
+        particle.style.marginLeft = "-4px";
+        particle.style.marginTop = "-4px";
+
+        /* ADD TO WEBSITE */
+
+        cursorTrail.appendChild(particle);
+
+        /* REMOVE AFTER ANIMATION */
+
+        particle.addEventListener("animationend", function() {
+            particle.remove();
+        });
+
+    });
+
+}
+
+
+/* =========================================
+   STEP 6.4 - AI SYSTEM HUD CLOCK
+========================================= */
+
+function updateAIHUD() {
+
+    const clock = document.getElementById("hudClock");
+    const date = document.getElementById("hudDate");
+
+    // PHILIPPINE REAL-TIME CLOCK
+
+    const now = new Date();
+
+    const timeOptions = {
+        timeZone: "Asia/Manila",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+        hour12: false
+    };
+
+    const dateOptions = {
+        timeZone: "Asia/Manila",
+        weekday: "short",
+        year: "numeric",
+        month: "short",
+        day: "2-digit"
+    };
+
+    // UPDATE DIGITAL CLOCK
+
+    clock.textContent = new Intl.DateTimeFormat(
+        "en-GB",
+        timeOptions
+    ).format(now);
+
+    // UPDATE DATE
+
+    date.textContent = new Intl.DateTimeFormat(
+        "en-US",
+        dateOptions
+    ).format(now).toUpperCase();
+
+}
+
+
+/* =========================================
+   STEP 6.9.3 - SMART HUD CLOCK OPTIMIZATION
+========================================= */
+
+// HUD CLOCK TIMER
+
+let hudClockTimer = null;
+
+
+// START CLOCK
+
+function startHUDClock() {
+
+    if (hudClockTimer !== null) {
+        return;
+    }
+
+    hudClockTimer = setInterval(updateAIHUD, 1000);
+
+}
+
+
+// STOP CLOCK
+
+function stopHUDClock() {
+
+    clearInterval(hudClockTimer);
+
+    hudClockTimer = null;
+
+}
+
+
+// INITIAL CLOCK UPDATE
+
+updateAIHUD();
+
+startHUDClock();
+
+
+// SMART BACKGROUND TAB DETECTION
+
+
+/* =========================================
+   STEP 6.9.4 - SMART ANIMATION PERFORMANCE
+========================================= */
+
+document.addEventListener("visibilitychange", function() {
+
+    // PAUSE CSS ANIMATIONS WHEN TAB IS HIDDEN
+    document.documentElement.classList.toggle(
+        "tab-hidden",
+        document.hidden
+    );
+
+    // STOP HUD CLOCK IN BACKGROUND
+    if (document.hidden) {
+
+        stopHUDClock();
+
+    } else {
+
+        // RESUME HUD CLOCK
+        updateAIHUD();
+        startHUDClock();
+
+    }
+
+});
+
+
+
+// STEP 6.9.3 COMPLETE
+
+
+
+/* =========================================
+   STEP 6.5 - FUTURISTIC AI CHATBOT SYSTEM
+========================================= */
+
+// CHATBOT ELEMENTS
+
+const aiChatButton = document.getElementById("aiChatButton");
+const aiChatWindow = document.getElementById("aiChatWindow");
+const aiChatClose = document.getElementById("aiChatClose");
+const aiChatMessages = document.getElementById("aiChatMessages");
+const aiChatForm = document.getElementById("aiChatForm");
+const aiChatInput = document.getElementById("aiChatInput");
+const aiChatSend = document.getElementById("aiChatSend");
+
+
+// OPEN CHATBOT
+
+function openAIChat() {
+
+    aiChatWindow.classList.add("chat-open");
+
+    aiChatWindow.setAttribute("aria-hidden", "false");
+
+    aiChatButton.setAttribute("aria-expanded", "true");
+
+    aiChatButton.style.display = "none";
+
+    aiChatInput.focus();
+
+}
+
+
+// CLOSE CHATBOT
+
+function closeAIChat() {
+
+    aiChatWindow.classList.remove("chat-open");
+
+    aiChatWindow.setAttribute("aria-hidden", "true");
+
+    aiChatButton.setAttribute("aria-expanded", "false");
+
+    aiChatButton.style.display = "flex";
+
+    aiChatButton.focus();
+
+}
+
+
+// BUTTON EVENTS
+
+aiChatButton.addEventListener("click", openAIChat);
+
+aiChatClose.addEventListener("click", closeAIChat);
+
+
+// ESCAPE KEY
+
+document.addEventListener("keydown", function(event) {
+
+    if (
+        event.key === "Escape" &&
+        aiChatWindow.classList.contains("chat-open")
+    ) {
+
+        closeAIChat();
+
+    }
+
+});
+
+
+// ADD CHAT MESSAGE
+
+function addAIChatMessage(message, sender) {
+
+    const messageElement = document.createElement("div");
+
+    messageElement.className = "ai-message " + sender;
+
+    // SAFE TEXT OUTPUT
+
+    messageElement.textContent = message;
+
+    aiChatMessages.appendChild(messageElement);
+
+    // SCROLL TO LATEST MESSAGE
+
+    aiChatMessages.scrollTop = aiChatMessages.scrollHeight;
+
+}
+
+
+// TYPING INDICATOR
+
+function showAITyping() {
+
+    const typingElement = document.createElement("div");
+
+    typingElement.className = "ai-typing";
+
+    typingElement.id = "aiTypingIndicator";
+
+    typingElement.innerHTML = `
+        <span></span>
+        <span></span>
+        <span></span>
+    `;
+
+    aiChatMessages.appendChild(typingElement);
+
+    aiChatMessages.scrollTop = aiChatMessages.scrollHeight;
+
+}
+
+
+// REMOVE TYPING INDICATOR
+
+function removeAITyping() {
+
+    const typingElement = document.getElementById("aiTypingIndicator");
+
+    if (typingElement) {
+
+        typingElement.remove();
+
+    }
+
+}
+
+
+// =========================================
+// AI RESPONSE SYSTEM
+// =========================================
+
+function getAIResponse(message) {
+
+    const text = message.toLowerCase().trim();
+
+
+// GREETING - IMPROVED DETECTION
+
+if (
+    /^(hi|hello|hey|good morning|good afternoon|good evening)\b/i.test(text)
+) {
+
+    return "Hello there! 👋 Welcome to My Success Website. What would you like to know?";
+
+}
+
+
+// ABOUT WEBSITE
+
+if (
+    text.includes("website") ||
+    text.includes("who are you") ||
+    text === "about" ||
+    text.includes("about this website")
+) {
+
+    return "My Success Website is a personal portfolio created by Raymund Kevin Russel, a future web developer passionate about creating modern, creative, and futuristic websites.";
+
+}
+
+
+    // HTML SKILLS
+
+    if (text.includes("html")) {
+
+        return "HTML is the foundation of my web development journey. I use it to structure webpages, headings, paragraphs, images, links, and forms.";
+
+    }
+
+
+    // CSS SKILLS
+
+    if (text.includes("css")) {
+
+        return "CSS helps me design beautiful websites. I'm learning responsive layouts, animations, colors, typography, glassmorphism, and futuristic neon effects.";
+
+    }
+
+
+    // JAVASCRIPT SKILLS
+
+    if (
+        text.includes("javascript") ||
+        text.includes("js")
+    ) {
+
+        return "JavaScript makes websites interactive. I'm learning functions, events, variables, conditions, and DOM manipulation.";
+
+    }
+
+
+    // GENERAL SKILLS
+
+    if (
+        text.includes("skill") ||
+        text.includes("technologies")
+    ) {
+
+        return "My current technical skills are HTML, CSS, and JavaScript. I'm continuously practicing to become a better web developer.";
+
+    }
+
+
+    // PROJECTS
+
+    if (
+        text.includes("project") ||
+        text.includes("portfolio")
+    ) {
+
+        return "My projects include a Personal Portfolio, Login System UI, and Business Website concept. These projects help me practice HTML, CSS, and JavaScript.";
+
+    }
+
+
+    // GOAL
+
+    if (
+        text.includes("goal") ||
+        text.includes("dream") ||
+        text.includes("future")
+    ) {
+
+        return "My goal is to become a professional web developer who creates modern, responsive, user-friendly websites and meaningful digital experiences.";
+
+    }
+
+
+    // CONTACT
+
+    if (
+        text.includes("contact") ||
+        text.includes("email") ||
+        text.includes("hire") ||
+        text.includes("message")
+    ) {
+
+        return "You can reach me through the Contact Me section of this website. Send a message about your project, opportunity, or question.";
+
+    }
+
+
+    // LEARNING
+
+    if (
+        text.includes("learn") ||
+        text.includes("beginner") ||
+        text.includes("start")
+    ) {
+
+        return "Start with HTML, then learn CSS for design, and JavaScript for interactivity. Practice by building small projects and gradually improving them.";
+
+    }
+
+
+    // THANK YOU
+
+    if (
+        text.includes("thank") ||
+        text.includes("thanks")
+    ) {
+
+        return "You're welcome! 😊 Thank you for visiting My Success Website. Keep learning, keep creating, and keep building your future!";
+
+    }
+
+
+    // HELP
+
+    if (
+        text.includes("help") ||
+        text.includes("question")
+    ) {
+
+        return "I can answer questions about my website, HTML, CSS, JavaScript, projects, skills, goals, and contact information. What would you like to explore?";
+
+    }
+
+
+    // DEFAULT RESPONSE
+
+    return "That's an interesting question! I'm currently a website demo assistant. Try asking me about my skills, projects, goals, HTML, CSS, or JavaScript.";
+
+}
+
+
+// =========================================
+// SEND CHAT MESSAGE
+// =========================================
+
+// PREVENT MULTIPLE CHAT REQUESTS
+
+let aiChatProcessing = false;
+
+function sendAIChatMessage(message) {
+
+    const cleanMessage = message.trim();
+
+    if (!cleanMessage || aiChatProcessing) {
+        return;
+    }
+
+    aiChatProcessing = true;
+
+    // DISPLAY USER MESSAGE
+    addAIChatMessage(cleanMessage, "user");
+
+    // CLEAR INPUT
+    aiChatInput.value = "";
+
+    // DISABLE INPUT AND BUTTONS
+    aiChatSend.disabled = true;
+    aiChatInput.disabled = true;
+
+    aiQuickQuestions.forEach(function(button) {
+        button.disabled = true;
+    });
+
+    // SHOW TYPING
+    showAITyping();
+
+    // SIMULATED THINKING
+    setTimeout(function() {
+
+        removeAITyping();
+
+        const response = getAIResponse(cleanMessage);
+
+        addAIChatMessage(response, "bot");
+
+        // ENABLE CHAT AGAIN
+        aiChatProcessing = false;
+
+        aiChatSend.disabled = false;
+        aiChatInput.disabled = false;
+
+        aiQuickQuestions.forEach(function(button) {
+            button.disabled = false;
+        });
+
+        aiChatInput.focus();
+
+    }, 1000);
+
+}
+
+
+
+// FORM SUBMISSION
+
+aiChatForm.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    sendAIChatMessage(aiChatInput.value);
+
+});
+
+
+// QUICK QUESTION BUTTONS
+
+const aiQuickQuestions = document.querySelectorAll(
+    ".ai-chat-quick button"
+);
+
+aiQuickQuestions.forEach(function(button) {
+
+    button.addEventListener("click", function() {
+
+        const question = button.dataset.question;
+
+        sendAIChatMessage(question);
+
+    });
+
+});
+
+
+// =========================================
+// STEP 6.5 COMPLETE
+// =========================================
+
+
+/* =========================================
+   STEP 6.6 - JAVASCRIPT ERROR PROTECTION
+========================================= */
+
+// 1. GLOBAL JAVASCRIPT ERROR MONITOR
+
+window.addEventListener("error", function(event) {
+
+    console.error(
+        "[WEBSITE ERROR]",
+        event.message,
+        "FILE:",
+        event.filename,
+        "LINE:",
+        event.lineno,
+        "COLUMN:",
+        event.colno
+    );
+
+});
+
+
+// 2. PROMISE ERROR MONITOR
+
+window.addEventListener("unhandledrejection", function(event) {
+
+    console.error(
+        "[PROMISE ERROR]",
+        event.reason
+    );
+
+});
+
+
+// 3. WEBSITE SYSTEM INITIALIZATION MESSAGE
+
+console.log(
+    "%cMY SUCCESS WEBSITE",
+    "color:#00D9FF;font-size:22px;font-weight:bold;"
+);
+
+console.log(
+    "%cAI SYSTEM INITIALIZED",
+    "color:#00FF88;font-size:14px;font-weight:bold;"
+);
+
+
+// 4. WEBSITE VERSION
+
+console.log(
+    "%cSYSTEM VERSION: 1.0",
+    "color:#795BFF;font-size:12px;font-weight:bold;"
+);
+
+
+// 5. STEP 6.6 STATUS
+
+console.log(
+    "%cSTEP 6.6 - ERROR MONITOR ACTIVE",
+    "color:#00FF88;font-size:13px;font-weight:bold;"
+);
+
+
+// STEP 6.6 COMPLETE
+
+</script>
+
+</body>
+
+</html>
