@@ -1,4 +1,5 @@
+
 User-agent: *
 Allow: /
 
-Sitemap: https://arzkie0725-ship-it.github.io/my-success-website/sitemap.txt
+Sitemap: https://arzkie0725-ship-it.github.io/my-success-website/sitemap.xml
